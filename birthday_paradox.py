@@ -67,9 +67,10 @@ def main():
     print(f"Complete, {NUM_SIMULATIONS} simulations run.")
 
     # analysis
+    birthday_match_percentage = round((matches / NUM_SIMULATIONS) * 100, 2)
     print(f"""Out of {NUM_SIMULATIONS} simulations of {num_birthdays} people, there was a
     matching birthday in that group {matches} times. This means
-    that {num_birthdays} people have a {round((matches / NUM_SIMULATIONS) * 100, 2)} % chance of
+    that {num_birthdays} people have a {birthday_match_percentage} % chance of
     having a matching birthday in their group.
     That's probably more than you would think!""")
         
